@@ -5,6 +5,8 @@ import scala.collection.{immutable, mutable}
 /** A set backed by `n` (0 or more) hash-based multimaps keyed on properties of the set's
   * elements.
   *
+  * @see [[PolyMap.Index]]
+  *
   * == Example usage ==
   * {{{
   * case class Person(id: Int, name: String)

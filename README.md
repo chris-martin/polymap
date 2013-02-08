@@ -12,10 +12,14 @@ import org.codeswarm.polymap._
 
 case class Person(id: Int, name: String)
 
+// create a collection with 2 indexes
 val people = new PolyMap[Person] {
   val byId = index(_.id)
   val byName = index(_.name)
 }
+
+// add some elements
+people += (Person(1, "Alice"), Person(2, "Bob"), Person(3, "Alice"))
 
 // get people named Alice
 people.byName("Alice")

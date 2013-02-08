@@ -1,4 +1,4 @@
-name := "mihmm"
+name := "polymap"
 
 version := "1.0-SNAPSHOT"
 
@@ -8,7 +8,7 @@ organization := "org.codeswarm"
 
 organizationHomepage := Some(url("https://github.com/codeswarm"))
 
-homepage := Some(url("https://github.com/codeswarm/mihmm"))
+homepage := Some(url("https://github.com/codeswarm/polymap"))
 
 licenses := Seq(
   "The Apache Software License, Version 2.0" ->
@@ -28,7 +28,7 @@ publishTo <<= version { (v: String) =>
 
 pomExtra := {
   val org = "codeswarm"
-  val repo = "mihmm"
+  val repo = "polymap"
   <scm>
     <url>https://github.com/{org}/{repo}</url>
     <connection>scm:git:git://github.com/{org}/{repo}.git</connection>

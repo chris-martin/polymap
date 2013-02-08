@@ -4,6 +4,13 @@ PolyMap
 This data structure is a straightforward collection of multimaps based on `HashMap` and `HashSet`.
 It ought to have been named "Multi-Index Hash Multi-Map", but that was too long.
 
+[Scaladoc API documentation](http://codeswarm.github.com/polymap/api/1.0/index.html#org.codeswarm.polymap.package)
+
+Supported Scala versions: [ 2.10 ]
+
+SBT dependency:
+```libraryDependencies += "org.codeswarm" %% "polymap" % "1.0"```
+
 Example usage
 -------------
 

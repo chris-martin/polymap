@@ -27,3 +27,8 @@ people.byName("Alice")
 // remove people with id 3
 people.byId.remove(3)
 ```
+
+SBT dependency
+--------------
+
+

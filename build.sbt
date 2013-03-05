@@ -1,6 +1,6 @@
 name := "polymap"
 
-version := "1.1"
+version := "1.2-SNAPSHOT"
 
 scalaVersion := "2.10.0"
 

@@ -9,7 +9,7 @@ It ought to have been named "Multi-Index Hash Multi-Map", but that was too long.
 Supported Scala versions: [ 2.10 ]
 
 SBT dependency:
-```libraryDependencies += "org.codeswarm" %% "polymap" % "1.0"```
+```libraryDependencies += "org.codeswarm" %% "polymap" % "1.1"```
 
 Example usage
 -------------

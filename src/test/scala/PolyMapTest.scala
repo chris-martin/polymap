@@ -125,6 +125,26 @@ class PolyMapTest extends FunSpec {
       assert(x == Set("abc", "def"))
     }
 
+    it ("""should have an index with keys (a, b) after (abc, aaa, bcd) are added""") {
+      val x = new X()
+      x += ("abc", "aaa", "bcd")
+      assert(x.byFirstLetter.keys == Set('a', 'b'))
+    }
+
+    it ("""should have an index with keys (a, b) after (aaa, bbb) are added""") {
+      val x = new X()
+      x += ("aaa", "bbb")
+      x -= "bbb"
+      assert(x.byFirstLetter.keys == Set('a'))
+    }
+
+    it ("""should have an index with key (a) after (aaa, bbb) are added and (bbb) is removed""") {
+      val x = new X()
+      x += ("aaa", "bbb")
+      x -= "bbb"
+      assert(x.byFirstLetter.keys == Set('a'))
+    }
+
   }
 
   describe ("""A PolyMap[String] indexed by the first and second letters""") {

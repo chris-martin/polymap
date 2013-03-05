@@ -126,6 +126,8 @@ class PolyMap[Element] extends mutable.Set[Element] {
       */
     def apply(key: Key): immutable.Set[Element] = get(key)
 
+    def keys: collection.Set[Key]
+
     /** Finds elements that are associated with `key` in this `Index`, and removes them
       * from the `PolyMap`.
       * @return the elements that were removed
@@ -149,6 +151,8 @@ class PolyMap[Element] extends mutable.Set[Element] {
 
     override def size: Int = underlying.size
     override def toSet[B >: (Key, Element)]: Set[B] = underlying.toSet
+
+    def keys: collection.Set[Key] = underlying.keys
 
     def containsElement(elem: Element): Boolean = underlying contains keyValuePair(elem)
 

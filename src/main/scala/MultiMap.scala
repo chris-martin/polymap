@@ -19,6 +19,8 @@ private[polymap] class MultiMap[A, B] extends mutable.Set[(A, B)] {
 
   def get(key: A): immutable.Set[B] = underlying.get(key).toSet.flatten
 
+  def keys: collection.Set[A] = underlying.keySet
+
   def contains(key: A, value: B): Boolean =
     underlying.get(key) match {
       case None =>
